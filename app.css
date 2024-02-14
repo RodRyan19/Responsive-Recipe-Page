@@ -1,0 +1,184 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  font-size: 1em;
+  color: hsl(30, 10%, 34%);
+}
+
+main {
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  padding: 35px;
+  margin: 60px;
+  border-radius: 16px;
+}
+.omelette-img {
+  width: 100%;
+  border-radius: 12px;
+}
+h1 {
+  color: hsl(24, 5%, 18%);
+  padding: 35px 0 12px 0;
+}
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+.prep {
+  background-color: hsl(330, 100%, 98%);
+  display: block;
+  border-radius: 5px;
+  padding: 24px;
+  margin: 25px 0px;
+  line-height: 30px;
+  font-size: 1em;
+  color: hsl(24, 5%, 18%);
+}
+ul,
+li {
+  padding-left: 20px;
+}
+ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+.Ingredients {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 20px;
+  line-height: 30px;
+  color: hsl(24, 5%, 18%);
+}
+.list {
+  padding-top: 20px;
+}
+.Instructions {
+  padding-top: 20px;
+  line-height: 26px;
+  color: hsl(24, 5%, 18%);
+}
+span {
+  font-weight: 600;
+}
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+ol {
+  padding: 20px 0px 20px 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nutri {
+  padding-top: 20px;
+}
+.nutri-desc {
+  padding: 15px 0;
+  color: hsl(24, 5%, 18%);
+}
+.Nutrition {
+  max-width: 900px;
+}
+.content-table {
+  border-collapse: collapse;
+  width: 100%;
+  color: hsl(24, 5%, 18%);
+}
+.row {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.row:last-child {
+  border-bottom: none;
+}
+td {
+  padding: 10px 0 10px 10px;
+}
+.first-column {
+  padding-left: 30px;
+  font-weight: 400;
+}
+.second-column {
+  padding-left: 50px;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    margin: 0px;
+  }
+}
